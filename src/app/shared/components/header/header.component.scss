@@ -1,23 +1,36 @@
+@import 'src/assets/styles/colors';
+@import 'src/assets/styles/fonts';
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    height: 100px;
+    background-color: #fff;
+    font-family: $super-reg;
+}
+.logo {
+    font-size: 40px;
 }
 .header-navigations {
     width: 40%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: $color-2;
 }
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 400px;
+    font-size: 17px;
 }
 ul {
     list-style: none;
 }
 a {
     text-decoration: none;
+    color: $color-2;
 }
