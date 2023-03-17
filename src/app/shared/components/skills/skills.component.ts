@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss']
 })
-export class SkillsComponent {
+export class SkillsComponent implements OnInit{
 
   skills = [
     {
@@ -70,8 +70,15 @@ export class SkillsComponent {
     },
     {
       name : 'MC Office',
-      imagePath : './assets/icons/Microsoft-Office.png'
+      imagePath : './assets/icons/Microsoft_Office.png'
     },
   ]
 
+
+  constructor(){}
+
+
+  ngOnInit(): void {
+    
+  }
 }

@@ -7,8 +7,7 @@
     justify-content: space-between;
     padding: 20px;
     height: 100px;
-    background-color: #fff;
-    font-family: $super-reg;
+    font-family: $inter-reg;
 }
 .logo {
     font-size: 40px;
@@ -18,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: $color-2;
+    color: $color-1;
 }
 .nav {
     display: flex;
@@ -32,5 +31,5 @@ ul {
 }
 a {
     text-decoration: none;
-    color: $color-2;
-}
+    color: $color-1;
+}  

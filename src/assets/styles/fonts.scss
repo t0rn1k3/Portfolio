@@ -1,22 +1,22 @@
 @font-face {
-    font-family: 'Press Start 2P';
-    src: url('../fonts/PressStart2P-Regular.ttf') format('woff2'),
-        url('../fonts/PressStart2P-Regular.woff') format('woff'),
-        url('../fonts/PressStart2P-Regular.ttf') format('truetype');
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+        url('../fonts/Inter-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
-    font-family: 'Supermercado';
-    src: url('../fonts/Supermercado-Regular.woff2') format('woff2'),
-        url('../fonts/Supermercado-Regular.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Inter Bold';
+    src: url('../fonts/Inter-Bold.woff2') format('woff2'),
+        url('../fonts/Inter-Bold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 
 
-$ps2-reg : 'Press Start 2P';
-$super-reg : 'Supermercado';
+$inter-reg : 'Inter';
+$inter-bold : 'Inter Bold'

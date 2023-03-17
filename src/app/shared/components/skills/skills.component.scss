@@ -1,0 +1,25 @@
+@import 'src/assets/styles/colors';
+@import 'src/assets/styles/fonts';
+
+
+.skill-container {
+    width: 700px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.skills {
+    width: 300px;
+    margin: 10px 0;
+    font-family: $inter-reg;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.skills:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 8px $color-1;
+}
