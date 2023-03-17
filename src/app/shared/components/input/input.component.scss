@@ -1,0 +1,20 @@
+@import 'src/assets/styles/colors';
+@import 'src/assets/styles/fonts';
+
+.input-element {
+    width: 250px;
+    font-family: $inter-reg;
+    color: $color-1;
+    margin: 10px 0;
+}
+.input {
+    width: 100%;
+    outline: none;
+    padding: 8px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 13px;
+    font-family: $inter-reg;
+    color: $color-2;
+    background-color: $color-1;
+}

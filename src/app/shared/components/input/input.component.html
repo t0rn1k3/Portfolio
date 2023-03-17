@@ -1,0 +1,7 @@
+<div class="input-element">
+    <label [for]="labelText.toUpperCase()">{{ labelText }}</label>
+    <div class="input-field">
+        <img class="input-field--icon" src="" alt="">
+        <input (change)="onChange()" [id]="labelText.toUpperCase()" [type]="type" [placeholder]="placeHolder" class="input">
+    </div>
+</div>
