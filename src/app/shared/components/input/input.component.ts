@@ -24,4 +24,14 @@ export class InputComponent implements OnInit{
   onChange(){
     this.isDirty = true;
   }
+
+  errorMessage() {
+    if(this.control.hasError('invalidEmailFormat')){
+      return 'Email format is invalid'
+    }
+    if(this.control.hasError('minlength')) {
+      return 'Minimun 2 symbols *'
+    }
+    return '';
+  }
 }

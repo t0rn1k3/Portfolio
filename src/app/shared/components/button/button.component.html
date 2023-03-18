@@ -1,0 +1,4 @@
+<button [type]="type" [disabled]="dissable" >
+    <p *ngIf="!loader">{{ text }}</p>
+    <app-loader *ngIf="loader"></app-loader>
+</button>

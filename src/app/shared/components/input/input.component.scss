@@ -2,10 +2,13 @@
 @import 'src/assets/styles/fonts';
 
 .input-element {
-    width: 250px;
+    width: 350px;
+    height: 80px;
     font-family: $inter-reg;
     color: $color-1;
-    margin: 10px 0;
+}
+.input-field {
+    position: relative;
 }
 .input {
     width: 100%;
@@ -17,4 +20,19 @@
     font-family: $inter-reg;
     color: $color-2;
     background-color: $color-1;
+    margin-top: 5px;
+}
+.input:focus {
+    box-shadow: 0px 0px 10px $color-3;
+}
+.input-field--icon {
+    position: absolute;
+    width: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -25px;
+}
+.error {
+    color: $errorColor;
+    font-size: 13px;
 }

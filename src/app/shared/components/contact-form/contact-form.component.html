@@ -1,21 +1,7 @@
-<form class="form" action="">
-    <div class="contact-info">
-        <div class="info">
-            <app-input ></app-input>
-        </div>
-        <div class="info">
-            <app-input></app-input>
-        </div>
-    </div>
-    <div class="contact-info">
-        <div class="info">
-            <app-input></app-input>
-        </div>
-        <div class="info">
-            <app-input></app-input>
-        </div>
-    </div>
-    <label for="">tell me about your proposal</label>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
-    <button type="submit">send</button>
+<form class="form" action="" [formGroup]="contactForm" >
+    <app-input [control]="$any(contactForm.get('fName'))" [placeHolder]="'first name' | titlecase" [labelText]="'first name:'"></app-input>
+    <app-input [control]="$any(contactForm.get('lName'))"  [placeHolder]="'last name' | titlecase" [labelText]="'last name:'"></app-input>
+    <app-input [control]="$any(contactForm.get('phone'))"  [placeHolder]="'phone' | titlecase" [labelText]="'phone:'"></app-input>
+    <app-input type="email" [control]="$any(contactForm.get('email'))"  [placeHolder]="'email' | titlecase" [labelText]="'email:'"></app-input>
+    <app-button [dissable]="contactForm.invalid" [loader]="loader" [text]="'send'"></app-button>
 </form>

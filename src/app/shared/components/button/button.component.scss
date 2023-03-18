@@ -1,0 +1,12 @@
+@import 'src/assets/styles/colors';
+@import 'src/assets/styles/fonts';
+
+button {
+    width: 120px;
+    border: 0;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: $color-1;
+    color: $color-2;
+}

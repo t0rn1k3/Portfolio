@@ -5,15 +5,15 @@
     width: 600px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: $color-2;
+    padding: 25px;
+    border-radius: 8px;
 }
 .contact-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.info {
-    display: flex;
-    flex-direction: column;
 }
 label {
     margin-bottom: 5px;

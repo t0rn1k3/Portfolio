@@ -20,7 +20,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
     BrowserModule,
     AppRoutingModule,
     sharedModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
