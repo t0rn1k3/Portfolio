@@ -1,4 +1,12 @@
-<div class="contact">
-    <app-social></app-social>
-    <app-contact-form></app-contact-form>
+
+<div class="contact-page">
+    <div class="pos">
+        <div class="social-contact-apps" *ngFor="let img of socIcons">
+            <app-social [socIcons]="img" ></app-social>
+        </div>
+    </div>
+    
+    <div class="contact">
+        <app-contact-form></app-contact-form>
+    </div>
 </div>

@@ -3,5 +3,5 @@
     <app-input [control]="$any(contactForm.get('lName'))"  [placeHolder]="'last name' | titlecase" [labelText]="'last name:'"></app-input>
     <app-input [control]="$any(contactForm.get('phone'))"  [placeHolder]="'phone' | titlecase" [labelText]="'phone:'"></app-input>
     <app-input type="email" [control]="$any(contactForm.get('email'))"  [placeHolder]="'email' | titlecase" [labelText]="'email:'"></app-input>
-    <app-button [dissable]="contactForm.invalid" [loader]="loader" [text]="'send'"></app-button>
+    <app-button [loader]="loader" [text]="'send'"></app-button>
 </form>

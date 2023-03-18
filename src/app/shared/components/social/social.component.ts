@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-social',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./social.component.scss']
 })
 export class SocialComponent {
+
+  @Input() socIcons! : {text : string, linkTo: string, iconPath : string, imagePath : string}
+
 
 }

@@ -4,7 +4,7 @@
         <img class="input-field--icon" [src]="'assets/icons/check.png'">
         <input (change)="onChange()" [id]="labelText.toUpperCase()" [type]="type" [placeholder]="placeHolder" class="input">
     </div>
-    <div class="error" *ngIf="control.invalid && isDirty">
+    <div class="error" >
         {{ errorMessage() }}
     </div>
 </div>

@@ -1,4 +1,73 @@
+
+@import 'src/assets/styles/colors';
+@import 'src/assets/styles/fonts';
+
+
 .social-apps {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    background-color: rgba(244, 230, 230, 0.5);
+}
+.social-apps a {
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    position: relative;
+}
+.social-apps:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px $color-1;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.space {
+    width: 0px;
+}
+.social-images {
     position: absolute;
-    left: 0;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: rgba(244, 230, 230, 0.3);
+    border-radius: 50px;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+p {
+    padding: 0 50px;
+    width: 0%;
+    overflow: hidden;
+    font-size: 15px;
+    color: $color-1;
+}
+.social-images img {
+    width: 0%;
+    height: 0%;
+    border-radius: 50%;
+}
+.social-apps:hover .social-images {
+    width: 300px;
+    height: auto;
+    overflow: visible;
+    padding: 7px;
+    transition: width 0.3s ease-in-out;
+}
+.social-apps:hover p {
+    width: 250px;
+    transition: width 0.1s ease-in-out;
+}
+.social-apps:hover .social-images img {
+    width: 40px;
+    height: 40px;
+    transition: width 0.3s ease-in-out;
 }

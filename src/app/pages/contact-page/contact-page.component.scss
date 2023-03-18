@@ -1,7 +1,18 @@
-.contact {
+
+@import 'src/assets/styles/colors';
+@import 'src/assets/styles/fonts';
+
+
+.contact-page{
     height: calc(100vh - 100px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+}
+.contact {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30%;
+}
+.pos {
+    position: absolute;
+    top: 26%;
 }

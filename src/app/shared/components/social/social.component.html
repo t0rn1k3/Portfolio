@@ -1,34 +1,9 @@
 <div class="social-apps">
-    <ul>
-        <li>
-            <a href="">
-                <img src="" alt="">
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <img src="" alt="">
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <img src="" alt="">
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <img src="" alt="">
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <img src="" alt="">
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <img src="" alt="">
-            </a>
-        </li>
-    </ul>
+    <a [href]="socIcons.linkTo" target="_blank" >
+        <img [src]="socIcons.iconPath" alt="">
+    </a>
+    <div class="social-images">
+        <p>{{ socIcons.text }}</p>
+        <img [src]="socIcons.imagePath" alt="">
+    </div>
 </div>
