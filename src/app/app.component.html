@@ -1,2 +1,2 @@
-<app-header></app-header>
+<app-header *ngIf="!(routeUrl === '/confirm' ||routeUrl === '/404PageNotFound')"></app-header>
 <router-outlet></router-outlet>

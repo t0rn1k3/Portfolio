@@ -29,22 +29,21 @@ img {
     height: 100%;
 }
 .space {
-    width: 0px;
+    width: 140px;
 }
 .social-images {
-    position: absolute;
-    left: 20px;
     display: flex;
     align-items: center;
     justify-content: end;
     background-color: rgba(244, 230, 230, 0.3);
     border-radius: 50px;
-    width: 0px;
-    height: 0px;
+    width: 0%;
     overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 p {
-    padding: 0 50px;
     width: 0%;
     overflow: hidden;
     font-size: 15px;
@@ -56,15 +55,14 @@ p {
     border-radius: 50%;
 }
 .social-apps:hover .social-images {
-    width: 300px;
-    height: auto;
+    width: 250px;
     overflow: visible;
     padding: 7px;
-    transition: width 0.3s ease-in-out;
+    transition: left 0.3s ease-in-out;
 }
 .social-apps:hover p {
-    width: 250px;
-    transition: width 0.1s ease-in-out;
+    width: 100%;
+    transition: width 0s ease-in-out;
 }
 .social-apps:hover .social-images img {
     width: 40px;

@@ -11,6 +11,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { SocialComponent } from './components/social/social.component';
 
+
 @NgModule({
     declarations : [
         HeaderComponent,

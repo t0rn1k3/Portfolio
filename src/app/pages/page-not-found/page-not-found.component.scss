@@ -1,0 +1,22 @@
+@import 'src/assets/styles/colors';
+@import 'src/assets/styles/fonts';
+
+.page-not-found {
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error-message {
+    color: $errorColor;
+}
+h2 {
+    font-size: 350px;
+    letter-spacing: 50px;
+}
+p {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
