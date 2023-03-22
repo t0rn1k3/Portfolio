@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {TranslateService} from "@ngx-translate/core";
-import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -9,9 +7,11 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class HeaderComponent implements OnInit {
 
+  navbar = "NAVBAR1"
+
   constructor(
-    public translate: TranslateService
   ) {
+
   }
 
   ngOnInit(): void {

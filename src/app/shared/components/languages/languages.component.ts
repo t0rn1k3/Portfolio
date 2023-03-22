@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {TranslateService} from "@ngx-translate/core";
+import { TranslateService } from '../../services/translate.service';
 
 
 @Component({
@@ -10,7 +10,7 @@ import {TranslateService} from "@ngx-translate/core";
 export class LanguagesComponent implements OnInit {
 
   constructor(
-    public translate: TranslateService
+    public translateService: TranslateService
   ) {
   }
 
@@ -19,21 +19,10 @@ export class LanguagesComponent implements OnInit {
   }
 
   
-  // onLanguageChange(lang : string){
-  //   this.translate.use(lang)
-  //   console.log('works')
-  // }
-
-  options = [
-    {
-      option : 'en',
-      value: 'en'
-    },
-    {
-      option : 'ge',
-      value : 'ge'
-    }
-  ]
+  setLang(lang: string) {
+    this.translateService.use(lang);
+    console.log(lang)
+  }
 
 
 

@@ -8,17 +8,21 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
 import { sharedModule } from './shared/shared.module';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { EmailService } from './shared/services/email.service';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { SuccessfulSubmitedPageComponent } from './pages/successful-submited-page/successful-submited-page.component';
 
-import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { APP_INITIALIZER } from '@angular/core';
 
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+import { TranslateService } from './shared/services/translate.service';
+
+
+export function setupTranslateServiceFactory(
+  service: TranslateService): Function {
+return () => service.use('en');
 }
+
 
 @NgModule({
   declarations: [
@@ -35,16 +39,18 @@ export function HttpLoaderFactory(http: HttpClient) {
     sharedModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide : TranslateLoader,
-        useFactory : (HttpLoaderFactory),
-        deps : [HttpClient]
-      }
-    })
   ],
   providers: [
-    EmailService
+    EmailService, 
+    TranslateService,
+    {
+      provide: APP_INITIALIZER,
+      useFactory: setupTranslateServiceFactory,
+      deps: [
+        TranslateService
+      ],
+      multi: true
+    }
   ],
   bootstrap: [AppComponent]
 })

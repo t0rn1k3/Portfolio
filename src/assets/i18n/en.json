@@ -1,7 +1,6 @@
 {
-    "HOME" : {
-        "NAVBAR1": "Main",
-        "NAVBAR2" : "Projects",
-        "NAVBAR3" : "Contact" 
-    }
+    "NAVBAR1": "Main",
+    "NAVBAR2" : "Projects",
+    "NAVBAR3" : "Contact",
+    "TITLE" : "portfolio"
 }

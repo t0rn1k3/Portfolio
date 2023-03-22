@@ -12,7 +12,7 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { SocialComponent } from './components/social/social.component';
 import { LanguagesComponent } from './components/languages/languages.component';
 
-
+import { translatePipe } from './pipe/translate.pipe';
 
 
 
@@ -27,6 +27,7 @@ import { LanguagesComponent } from './components/languages/languages.component';
         LoaderComponent,
         SocialComponent,
         LanguagesComponent,
+        translatePipe
     ],
     imports : [
         BrowserModule,

@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import 'src/assets/i18n'
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +12,7 @@ export class TranslateService {
 
   use(lang : string) : Promise<{}> {
     return new Promise<{}>(resolve => {
-      const langPath = `src/assets/i18n/${lang || 'en'}`;
+      const langPath = `./assets/i18n/${lang || 'ge'}.json`;
 
       this.http.get(langPath).subscribe(
         response =>  {

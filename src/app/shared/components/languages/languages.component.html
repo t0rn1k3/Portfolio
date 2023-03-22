@@ -1,3 +1,4 @@
-<select name="languages" id="languages" #langs >
-    <option *ngFor="let option of options" [value]="option.value">{{ option.option }}</option>
-  </select>
+<div class="langs">
+    <button (click)="setLang('en')" > en </button>
+    <button (click)="setLang('ge')" > ge </button>
+</div>
