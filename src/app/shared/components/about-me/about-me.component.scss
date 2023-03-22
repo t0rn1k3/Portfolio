@@ -6,11 +6,13 @@
     letter-spacing: 0.5px;
     line-height: 25px;
     font-size: 15px;
-    border: 1px solid $color-1;
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 0 8px $color-3;
     font-family: $noto;
+    color: $color-1;
+    text-align: center;
+    transition: 0.3s;
+    margin: 20px auto;
 }
 h1 {
     text-align: center;

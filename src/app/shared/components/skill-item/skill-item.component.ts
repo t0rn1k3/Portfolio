@@ -14,4 +14,6 @@ export class SkillItemComponent implements OnInit {
   ngOnInit(): void {
     
   }
+
+
 }

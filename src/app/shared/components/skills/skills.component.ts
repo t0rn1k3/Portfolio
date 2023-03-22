@@ -81,4 +81,8 @@ export class SkillsComponent implements OnInit{
   ngOnInit(): void {
     
   }
+
+  onShowSkill(){
+    console.log('show')
+  }
 }
