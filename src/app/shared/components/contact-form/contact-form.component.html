@@ -1,6 +1,6 @@
 <form class="form" action="https://mailthis.to/tornikeburjanadze2@gmail.com" [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm.value)" [method]="'POST'">
-    <app-input [control]="$any(contactForm.get('fName'))" [isDirty]="submitted" [placeHolder]="'first name' | titlecase" [labelText]="'first name:'"></app-input>
-    <app-input [control]="$any(contactForm.get('lName'))"[isDirty]="submitted"  [placeHolder]="'last name' | titlecase" [labelText]="'last name:'"></app-input>
-    <app-input type="email" [control]="$any(contactForm.get('email'))"[isDirty]="submitted"  [placeHolder]="'email' | titlecase" [labelText]="'email:'"></app-input>
-    <app-button [loader]="loader" [dissable]="contactForm.invalid" [text]="'send'"></app-button>
+    <app-input [control]="$any(contactForm.get('fName'))" [isDirty]="submitted" [placeHolder]="'FIRST_NAME' | translate" [labelText]="'FIRST_NAME' | translate"></app-input>
+    <app-input [control]="$any(contactForm.get('lName'))"[isDirty]="submitted"  [placeHolder]="'LAST_NAME' | translate" [labelText]="'LAST_NAME' | translate"></app-input>
+    <app-input type="email" [control]="$any(contactForm.get('email'))"[isDirty]="submitted"  [placeHolder]="'email' | titlecase" [labelText]="'email'"></app-input>
+    <app-button [loader]="loader" [dissable]="contactForm.invalid" [text]="'SEND' | translate"></app-button>
 </form>
