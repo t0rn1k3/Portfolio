@@ -1,10 +1,9 @@
 <div class="input-element">
     <label [for]="labelText.toUpperCase()">{{ labelText | titlecase }}</label>
     <div class="input-field">
-        <img class="input-field--icon" [src]="'assets/icons/check.png'">
-        <input (change)="onChange()" [id]="labelText.toUpperCase()" [type]="type" [placeholder]="placeHolder" class="input">
+        <input  [formControl]="control"  (change)="onChange()" [id]="labelText.toUpperCase()" [type]="type" [placeholder]="placeHolder" class="input">
     </div>
-    <div class="error" >
+    <div class="error" *ngIf="control.invalid && isDirty">
         {{ errorMessage() }}
     </div>
 </div>

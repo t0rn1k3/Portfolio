@@ -27,7 +27,7 @@ export class InputComponent implements OnInit{
 
   errorMessage() {
     if(this.control.hasError('required')){
-      return 'This field is required'
+      return 'This field is required *'
     }
     if(this.control.hasError('invalidEmailFormat')){
       return 'Email format is invalid'

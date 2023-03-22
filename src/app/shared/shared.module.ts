@@ -10,6 +10,10 @@ import { InputComponent } from './components/input/input.component';
 import { ButtonComponent } from './components/button/button.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { SocialComponent } from './components/social/social.component';
+import { LanguagesComponent } from './components/languages/languages.component';
+
+
+
 
 
 @NgModule({
@@ -22,6 +26,7 @@ import { SocialComponent } from './components/social/social.component';
         ButtonComponent,
         LoaderComponent,
         SocialComponent,
+        LanguagesComponent,
     ],
     imports : [
         BrowserModule,

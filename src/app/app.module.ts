@@ -8,10 +8,17 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
 import { sharedModule } from './shared/shared.module';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { EmailService } from './shared/services/email.service';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { SuccessfulSubmitedPageComponent } from './pages/successful-submited-page/successful-submited-page.component';
+
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -27,7 +34,14 @@ import { SuccessfulSubmitedPageComponent } from './pages/successful-submited-pag
     AppRoutingModule,
     sharedModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide : TranslateLoader,
+        useFactory : (HttpLoaderFactory),
+        deps : [HttpClient]
+      }
+    })
   ],
   providers: [
     EmailService
@@ -35,3 +49,5 @@ import { SuccessfulSubmitedPageComponent } from './pages/successful-submited-pag
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

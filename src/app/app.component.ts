@@ -11,8 +11,10 @@ export class AppComponent {
   title = 'portfolio';
   routeUrl: string = '';
 
-  constructor(private router: Router) {
-    router.events.pipe(
+  constructor(
+    private router: Router,
+    ) {
+      router.events.pipe(
       filter((e: Event): e is RouterEvent => e instanceof RouterEvent)
     ).subscribe((e: RouterEvent) => {
       this.routeUrl = e.url;

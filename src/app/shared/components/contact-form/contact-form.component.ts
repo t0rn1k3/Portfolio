@@ -40,11 +40,7 @@ onSubmit(contactForm : any){
   console.log(contactForm.value)
   this.contact.sendMessage(FormData)
   .subscribe(response => {
-    location.href = ''
-    console.log(response)
-  }, error => {
-    console.warn(error.responseText)
-    console.log({error})
+   console.log(response)
   }
   )
 }
