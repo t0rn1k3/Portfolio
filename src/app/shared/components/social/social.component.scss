@@ -13,6 +13,7 @@
     align-items: center;
     transition: 0.3s;
     background-color: rgba(244, 230, 230, 0.5);
+    font-family: $noto;
 }
 .social-apps a {
     width: 40px;
@@ -55,7 +56,7 @@ p {
     border-radius: 50%;
 }
 .social-apps:hover .social-images {
-    width: 250px;
+    width: 300px;
     overflow: visible;
     padding: 7px;
     transition: left 0.3s ease-in-out;

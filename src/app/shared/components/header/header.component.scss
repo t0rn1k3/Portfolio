@@ -7,7 +7,7 @@
     justify-content: space-between;
     padding: 20px;
     height: 100px;
-    font-family: $inter-reg;
+    font-family: $noto;
 }
 .logo {
     font-size: 40px;
@@ -20,16 +20,27 @@
     color: $color-1;
 }
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    
     width: 400px;
     font-size: 17px;
 }
 ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     list-style: none;
+}
+li {
+    transition: 0.3s;
+}
+li:hover {
+    transform: scale(1.1);
+}
+li:hover a {
+    text-shadow: 0px 0px 2px $color-1;
 }
 a {
     text-decoration: none;
     color: $color-1;
+    transition: 0.3s;
 }  

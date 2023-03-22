@@ -5,19 +5,17 @@
 .skill-container {
     width: 700px;
     height: 600px;
-    background-color: red;
-    transform: translateX(-700px);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+    font-family: $noto;
 }
 .skills {
     width: 300px;
     margin: 10px 0;
-    font-family: $inter-reg;
     border-radius: 8px;
     transition: 0.3s;
 }
