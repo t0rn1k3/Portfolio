@@ -82,7 +82,5 @@ export class SkillsComponent implements OnInit{
     
   }
 
-  onShowSkill(){
-    console.log('show')
-  }
+
 }

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TranslatePipe } from '@ngx-translate/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,7 @@ import { SuccessfulSubmitedPageComponent } from './pages/successful-submited-pag
 import { APP_INITIALIZER } from '@angular/core';
 
 import { TranslateService } from './shared/services/translate.service';
+import { translatePipe } from './shared/pipe/translate.pipe';
 
 
 export function setupTranslateServiceFactory(

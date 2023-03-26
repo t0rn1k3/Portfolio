@@ -1,4 +1,6 @@
 <div class="about-me">
     <h1>{{ "HELLO" | translate }}</h1>
     <p> {{ "ABOUT" | translate }} &#9829; </p>
+    <app-skills *ngIf="visible"></app-skills>
+    <app-custom-button class="btn" (click)="onShowSkill()"  text='{{ (isShown? "SKILLS" : "GO_BACK") | translate }}'></app-custom-button>
 </div>

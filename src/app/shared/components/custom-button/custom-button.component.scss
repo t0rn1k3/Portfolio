@@ -2,7 +2,6 @@
 @import 'src/assets/styles/fonts';
 
 button {
-    width: 180px;
     padding: 10px 20px;
     cursor: pointer;
     border: 0;
@@ -13,6 +12,6 @@ button {
     border-left: 1px solid $color-2;
     transition: 0.3s;
 }
-button:hover {
+button:hover {  
     transform: scale(1.1);
 }
