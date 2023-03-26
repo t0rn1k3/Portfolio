@@ -1,0 +1,78 @@
+@import 'src/assets/styles/colors';
+@import 'src/assets/styles/fonts';
+
+.personal-info {
+    width: 600px;
+    font-family: $noto;
+    color: $color-1;
+    margin-top: 50px;
+}
+.name-picture {
+    display: flex;
+    align-items: center;
+}
+.img {
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+}
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.name {
+    font-size: 25px;
+}
+.contact-info {
+    margin-top: 25px;
+}
+.cont {
+    width: 70%;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+}
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.icon:hover span {
+    font-size: 50px;
+}
+h3 {
+    font-size: 18px;
+    line-height: 30px;
+}
+h4 {
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 17px;
+    margin: 20px 0;
+}
+.edu {
+    display: flex;
+    align-items: start;
+}
+.faculty {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.faculty p {
+    font-size: 17;
+    font-weight: bold;
+}
+.faculty span {
+    font-size: 15px;
+    padding: 20px;
+}

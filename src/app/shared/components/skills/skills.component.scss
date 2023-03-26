@@ -3,8 +3,8 @@
 
 
 .skill-container {
-    width: 700px;
-    height: 600px;
+    width: 1200px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -15,20 +15,35 @@
     position: relative;
     // transform: translateX(-700px);
     z-index: 10;
+    display: none;
 }
 .skill-container .btn {
     position: absolute;
     right: -195px;
 }
 .skills {
+
+    --g: 1px;     /* the gap */
+    --b: 3px;     
+    --c: #669706;
     width: 300px;
     margin: 10px 0;
-    border-radius: 8px;
-    transition: 0.3s;
-    border-bottom: 1px solid $color-2;
+    border-radius: 15px;
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    cursor: pointer;
+    transition: .3s;
 }
 .skills:hover {
     transform: scale(1.2);
     border-bottom: 0;
     border-top: 1px solid $color-2 ;
+    --_p: 75%;
+    filter: grayscale(0%);
 }

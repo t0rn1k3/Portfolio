@@ -2,5 +2,5 @@
     <div class="skills" *ngFor="let skill of skills">
         <app-skill-item [skills]="skill" ></app-skill-item>
     </div>
-    <app-custom-button class="btn" (click)="onShowSkill()"  [text]="' show skills'"></app-custom-button>
+    <app-custom-button class="btn" (click)="onShowSkill()"  [text]="'SKILLS' | translate"></app-custom-button>
 </div>

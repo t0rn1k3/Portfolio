@@ -13,6 +13,9 @@ import { SocialComponent } from './components/social/social.component';
 import { LanguagesComponent } from './components/languages/languages.component';
 
 import { translatePipe } from './pipe/translate.pipe';
+import { AboutMeComponent } from './components/about-me/about-me.component';
+import { CustomButtonComponent } from './components/custom-button/custom-button.component';
+import { PersonalInfoComponent } from './components/personal-info/personal-info.component';
 
 
 
@@ -27,7 +30,10 @@ import { translatePipe } from './pipe/translate.pipe';
         LoaderComponent,
         SocialComponent,
         LanguagesComponent,
-        translatePipe
+        translatePipe,
+        AboutMeComponent,
+        CustomButtonComponent,
+        PersonalInfoComponent
     ],
     imports : [
         BrowserModule,
@@ -38,7 +44,10 @@ import { translatePipe } from './pipe/translate.pipe';
         HeaderComponent,
         SkillsComponent,
         ContactFormComponent,
-        SocialComponent
+        SocialComponent,
+        AboutMeComponent,
+        CustomButtonComponent,
+        PersonalInfoComponent
     ],
 })
 
