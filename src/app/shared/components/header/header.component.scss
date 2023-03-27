@@ -23,7 +23,6 @@
     color: $color-1;
 }
 .nav {
-    
     width: 400px;
     font-size: 17px;
 }
@@ -47,3 +46,24 @@ a {
     color: $color-1;
     transition: 0.3s;
 }  
+
+
+@media screen and (max-width : 1300px) {
+    .header-navigations {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width : 1035px) {
+    .nav {
+        width: 300px;
+    }
+    .header-navigations {
+        width: 50%;
+    }
+}
+@media screen and (max-width : 850px) {
+    .nav {
+        display: none;
+    }
+}
