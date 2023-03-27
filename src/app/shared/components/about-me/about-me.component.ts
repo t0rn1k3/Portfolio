@@ -7,10 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutMeComponent implements OnInit {
 
-  visible : boolean = false
 
-
-  isShown : boolean = true;
 
   constructor(){}
 
@@ -19,8 +16,5 @@ export class AboutMeComponent implements OnInit {
   }
 
 
-  onShowSkill(){
-    this.isShown = !this.isShown;
-    this.visible = !this.visible
-  }
+
 }

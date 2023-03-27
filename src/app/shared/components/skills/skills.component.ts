@@ -83,4 +83,14 @@ export class SkillsComponent implements OnInit{
   }
 
 
+  visible : boolean = false
+
+
+  isShown : boolean = true;
+
+
+  onShowSkill(){
+    this.isShown = !this.isShown;
+    this.visible = !this.visible
+  }
 }

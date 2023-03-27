@@ -25,7 +25,7 @@
     font-family: $noto;
     position: relative;
     z-index: 10;
-    position: absolute;
+    position: relative;
 }
 .skills {
 
@@ -50,6 +50,18 @@
     border-bottom: 0;
     --_p: 75%;
     filter: grayscale(0%);
+}
+
+.relative {
+    margin-top: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.click .btn {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 @media screen and (max-width : 1200px) {
@@ -88,6 +100,9 @@
         width: 70%;
         height: 900px;
         justify-content: end;
+    }
+    .click .btn {
+        left: -20px;
     }
 }
 @media screen and (max-width : 470px) {

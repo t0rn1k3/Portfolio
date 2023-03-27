@@ -1,8 +1,14 @@
-<div class="shadow">
-    <div class="skill-container">
-        <div class="skills" *ngFor="let skill of skills">
-            <app-skill-item [skills]="skill" ></app-skill-item>
+<div class="click">
+    <div class="shadow" *ngIf="visible">
+        <div class="skill-container">
+            <div class="skills" *ngFor="let skill of skills">
+                <app-skill-item [skills]="skill" ></app-skill-item>
+            </div>
         </div>
     </div>
+    <div class="relative">
+        <app-custom-button class="btn" (click)="onShowSkill()"  text='{{ (isShown? "SKILLS" : "GO_BACK") | translate }}'></app-custom-button>
+    </div>
 </div>
+
 
