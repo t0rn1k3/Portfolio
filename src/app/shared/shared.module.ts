@@ -16,6 +16,8 @@ import { translatePipe } from './pipe/translate.pipe';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { CustomButtonComponent } from './components/custom-button/custom-button.component';
 import { PersonalInfoComponent } from './components/personal-info/personal-info.component';
+import { ProjectsContainerComponent } from './components/projects-container/projects-container.component';
+import { ProjectItemComponent } from './components/project-item/project-item.component';
 
 
 
@@ -33,7 +35,9 @@ import { PersonalInfoComponent } from './components/personal-info/personal-info.
         translatePipe,
         AboutMeComponent,
         CustomButtonComponent,
-        PersonalInfoComponent
+        PersonalInfoComponent,
+        ProjectsContainerComponent,
+        ProjectItemComponent
     ],
     imports : [
         BrowserModule,
@@ -47,7 +51,8 @@ import { PersonalInfoComponent } from './components/personal-info/personal-info.
         SocialComponent,
         AboutMeComponent,
         CustomButtonComponent,
-        PersonalInfoComponent
+        PersonalInfoComponent,
+        ProjectsContainerComponent,
     ],
 })
 

@@ -1,3 +1,36 @@
 <div class="projects">
-    <app-project-item></app-project-item>
+    <div class="flex">
+        <div class="js">
+            <h2>React</h2>
+            <div class="flex">
+                <div class="js-proj" *ngFor="let reactProject of reactProjects">
+                    <app-project-item [Projects]="reactProject"></app-project-item>
+                </div>
+            </div>
+        </div>
+        <div class="js">
+            <h2>Angular</h2>
+            <div class="flex">
+                <div class="js-proj" *ngFor="let angularProject of angularProjects">
+                    <app-project-item [Projects]="angularProject"></app-project-item>
+                </div>
+            </div>
+        </div>
+        <div class="js">
+            <h2>PHP</h2>
+            <div class="flex">
+                <div class="js-proj" *ngFor="let phpProject of phpProjects">
+                    <app-project-item [Projects]="phpProject"></app-project-item>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="js">
+        <h2>JavaScript</h2>
+        <div class="flex">
+            <div class="js-proj" *ngFor="let jsProject of jsProjects">
+                <app-project-item [Projects]="jsProject"></app-project-item>
+            </div>
+        </div>
+    </div>
 </div>

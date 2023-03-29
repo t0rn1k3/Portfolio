@@ -1,0 +1,55 @@
+@import 'src/assets/styles/colors';
+@import 'src/assets/styles/fonts';
+
+
+.project-item h3 {
+    text-align: center;
+    padding: 5px;
+}
+.project-image {
+    height: 250px;
+    cursor: pointer;
+    transition: 0.3s;
+    --s: 250px; 
+    --b: 8px;     /* the border thickness*/
+    --g: 14px;    /* the gap */
+    --c: #124559; /* the color */
+    
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid #0009;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.project-image:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+  }
+.buttons {
+    padding: 10px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $color-3;
+}
+.buttons a {
+    text-decoration: none;
+    color: $color-3;
+    font-family: $noto;
+    margin: 3px 0;
+    background-color: $color-2;
+    padding: 7px 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+.buttons a:hover {
+    text-decoration: underline;
+}

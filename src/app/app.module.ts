@@ -17,7 +17,6 @@ import { SuccessfulSubmitedPageComponent } from './pages/successful-submited-pag
 import { APP_INITIALIZER } from '@angular/core';
 
 import { TranslateService } from './shared/services/translate.service';
-import { translatePipe } from './shared/pipe/translate.pipe';
 
 
 export function setupTranslateServiceFactory(

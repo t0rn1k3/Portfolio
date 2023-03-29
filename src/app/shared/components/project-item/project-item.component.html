@@ -1,5 +1,10 @@
 <div class="project-item">
+    <h3>{{ Projects.name}}</h3>
     <div class="project-image">
-        adffndm
+        <img [src]="Projects.imagePath" [alt]="Projects.name">
+    </div>
+    <div class="buttons">
+        <a [href]="Projects.codeUrl" target="_blank" >{{ "VIEW_CODE" | translate }}</a>
+        <a [href]="Projects.pageUrl" target="_blank" >{{ "VISIT_PAGE" | translate }}</a>
     </div>
 </div>

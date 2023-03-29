@@ -3,7 +3,6 @@ import { AbstractControl, ValidationErrors } from "@angular/forms";
 export class EmailValidator {
   static validateFormat(control: AbstractControl): ValidationErrors | null {
     const value: string = control.value;
-    console.log(control.value)
 
     if (!value) {
       return null;

@@ -3,3 +3,10 @@
     display: flex;
     justify-content: space-around;
 }
+
+@media screen and (max-width : 1200px) {
+    .main-page {
+        flex-direction: column;
+        align-items: center;
+    }
+}
