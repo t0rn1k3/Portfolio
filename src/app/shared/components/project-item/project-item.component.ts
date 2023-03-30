@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ProjectsInterface } from '../../interfaces/projects.interface';
 
 @Component({
   selector: 'app-project-item',
@@ -7,10 +8,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ProjectItemComponent implements OnInit {
 
-  @Input() Projects! : {name: string, codeUrl : string, pageUrl : string, imagePath : string}
-  @Input() Projects2! : {name: string, codeUrl : string, pageUrl : string, imagePath : string}
-  @Input() Projects3! : {name: string, codeUrl : string, pageUrl : string, imagePath : string}
-  @Input() Projects4! : {name: string, codeUrl : string, pageUrl : string, imagePath : string}
+
+  // @ts-ignore
+  @Input() Projects;
+
 
   constructor() {}
 
