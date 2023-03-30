@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProjectsInterface } from '../../interfaces/projects.interface';
 
 @Component({
   selector: 'app-projects-container',
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsContainerComponent implements OnInit {
 
+
+// @ts-ignore
+  Projects : ProjectsInterface = []
 
   
   jsProjects = [

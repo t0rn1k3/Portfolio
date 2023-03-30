@@ -7,7 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SkillItemComponent implements OnInit {
 
-  @Input() skills! : {name : string, imagePath : string}
+   // @ts-ignore
+   @Input() allSkill;
 
   constructor(){}
 
