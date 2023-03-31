@@ -71,7 +71,7 @@ export class ProjectsContainerComponent implements OnInit {
     {
       name : "Calculator",
       codeUrl : "https://github.com/t0rn1k3/calculator",
-      pageUrl : 'https://t0rn1k3.github.io/HangMan/',
+      pageUrl : 'https://t0rn1k3.github.io/calculator/',
       imagePath : './assets/images/calc.PNG',
     }
   ]
@@ -80,8 +80,8 @@ export class ProjectsContainerComponent implements OnInit {
     {
       name : "Github-api",
       codeUrl : "https://github.com/t0rn1k3/github-api",
-      pageUrl : 'https://t0rn1k3.github.io/HangMan/',
-      imagePath : './assets/images/calc.PNG',
+      pageUrl : '',
+      imagePath : './assets/images/github_api.PNG',
     }
   ]
 

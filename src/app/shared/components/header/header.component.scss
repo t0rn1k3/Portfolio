@@ -16,14 +16,14 @@
     font-family: $great;
 }
 .header-navigations {
-    width: 40%;
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: $color-1;
 }
 .nav {
-    width: 400px;
+    width: 200px;
     font-size: 17px;
 }
 ul {
@@ -60,10 +60,5 @@ a {
     }
     .header-navigations {
         width: 50%;
-    }
-}
-@media screen and (max-width : 850px) {
-    .nav {
-        display: none;
     }
 }
