@@ -18,6 +18,7 @@ import { CustomButtonComponent } from './components/custom-button/custom-button.
 import { PersonalInfoComponent } from './components/personal-info/personal-info.component';
 import { ProjectsContainerComponent } from './components/projects-container/projects-container.component';
 import { ProjectItemComponent } from './components/project-item/project-item.component';
+import { TextareaComponent } from './components/textarea/textarea.component';
 
 
 
@@ -37,7 +38,8 @@ import { ProjectItemComponent } from './components/project-item/project-item.com
         CustomButtonComponent,
         PersonalInfoComponent,
         ProjectsContainerComponent,
-        ProjectItemComponent
+        ProjectItemComponent,
+        TextareaComponent
     ],
     imports : [
         BrowserModule,
